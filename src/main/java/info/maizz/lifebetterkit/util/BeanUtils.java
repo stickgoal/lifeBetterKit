@@ -37,11 +37,11 @@ public class BeanUtils {
 	 * @throws InvocationTargetException
 	 * @throws IntrospectionException
 	 */
-	public <T> T toBeanWithIgnore(T instance, Map<String, Object> map, Class<T> beanClass,
-									String... properties) throws IllegalAccessException,
-															IllegalArgumentException,
-															InvocationTargetException,
-															IntrospectionException {
+	public static <T> T toBeanWithIgnore(T instance, Map<String, Object> map, Class<T> beanClass,
+											String... properties) throws IllegalAccessException,
+																	IllegalArgumentException,
+																	InvocationTargetException,
+																	IntrospectionException {
 		return toBean(instance, map, beanClass, true, properties);
 	}
 	
@@ -56,11 +56,11 @@ public class BeanUtils {
 	 * @throws InvocationTargetException
 	 * @throws IntrospectionException
 	 */
-	public <T> T toBeanWithIgnore(Map<String, Object> map, Class<T> beanClass, String... properties)
-																									throws IllegalAccessException,
-																									IllegalArgumentException,
-																									InvocationTargetException,
-																									IntrospectionException {
+	public static <T> T toBeanWithIgnore(Map<String, Object> map, Class<T> beanClass,
+											String... properties) throws IllegalAccessException,
+																	IllegalArgumentException,
+																	InvocationTargetException,
+																	IntrospectionException {
 		return toBean(null, map, beanClass, true, properties);
 	}
 	
@@ -76,11 +76,11 @@ public class BeanUtils {
 	 * @throws InvocationTargetException
 	 * @throws IntrospectionException
 	 */
-	public <T> T toBeanWithin(T instance, Map<String, Object> map, Class<T> beanClass,
-								String... properties) throws IllegalAccessException,
-														IllegalArgumentException,
-														InvocationTargetException,
-														IntrospectionException {
+	public static <T> T toBeanWithin(T instance, Map<String, Object> map, Class<T> beanClass,
+										String... properties) throws IllegalAccessException,
+																IllegalArgumentException,
+																InvocationTargetException,
+																IntrospectionException {
 		return toBean(instance, map, beanClass, false, properties);
 	}
 	
@@ -95,11 +95,11 @@ public class BeanUtils {
 	 * @throws InvocationTargetException
 	 * @throws IntrospectionException
 	 */
-	public <T> T toBeanWithin(Map<String, Object> map, Class<T> beanClass, String... properties)
-																								throws IllegalAccessException,
-																								IllegalArgumentException,
-																								InvocationTargetException,
-																								IntrospectionException {
+	public static <T> T toBeanWithin(Map<String, Object> map, Class<T> beanClass,
+										String... properties) throws IllegalAccessException,
+																IllegalArgumentException,
+																InvocationTargetException,
+																IntrospectionException {
 		return toBean(null, map, beanClass, false, properties);
 	}
 	
@@ -118,10 +118,12 @@ public class BeanUtils {
 	 * @throws IllegalArgumentException
 	 * @throws InvocationTargetException
 	 */
-	public <T> T toBean(T instance, Map<String, Object> map, Class<T> beanClass, boolean ignore,
-						String... properties) throws IntrospectionException,
-												IllegalAccessException, IllegalArgumentException,
-												InvocationTargetException {
+	public static <T> T toBean(T instance, Map<String, Object> map, Class<T> beanClass,
+								boolean ignore, String... properties)
+																		throws IntrospectionException,
+																		IllegalAccessException,
+																		IllegalArgumentException,
+																		InvocationTargetException {
 		T t = null;
 		List<String> propList = Lists.newArrayList();
 		if (properties != null) {

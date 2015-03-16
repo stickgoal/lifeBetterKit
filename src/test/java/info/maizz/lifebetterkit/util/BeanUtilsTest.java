@@ -7,32 +7,29 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class BeanUtilsTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public BeanUtilsTest( String testName )
-    {
-        super( testName );
-    }
-
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( BeanUtilsTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+public class BeanUtilsTest extends TestCase {
+	/**
+	 * Create the test case
+	 *
+	 * @param testName name of the test case
+	 */
+	public BeanUtilsTest(String testName) {
+		super(testName);
+	}
+	
+	/**
+	 * @return the suite of tests being tested
+	 */
+	public static Test suite() {
+		return new TestSuite(BeanUtilsTest.class);
+	}
+	
+	/**
+	 * Rigourous Test :-)
+	 */
+	public void testBasicCopy() {
+		
+		//		BeanUtils.toBean(instance, map, beanClass, ignore, properties);
+		assertTrue(true);
+	}
 }

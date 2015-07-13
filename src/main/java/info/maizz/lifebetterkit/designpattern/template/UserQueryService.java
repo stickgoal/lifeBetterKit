@@ -1,11 +1,11 @@
 /*
- * www.yiji.com Inc.
+maizz.info 
  * Copyright (c) 2014 All Rights Reserved.
  */
 
 /*
  * 修订记录：
- * lvchen@yiji.com 2015年7月13日 下午5:34:09 创建
+ * lucas(stick.goal@163.com) 2015年7月13日 下午5:34:09 创建
  */
 package info.maizz.lifebetterkit.designpattern.template;
 
@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * 具体服务类，这里以用户查询服务为例，其他类相仿
  *
- * @author lvchen@yiji.com
+ * @author lucas(stick.goal@163.com)
  *
  */
 public class UserQueryService {

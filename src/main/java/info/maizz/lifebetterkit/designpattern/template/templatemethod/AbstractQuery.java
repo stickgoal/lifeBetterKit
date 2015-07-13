@@ -1,11 +1,11 @@
 /*
- * www.yiji.com Inc.
+maizz.info 
  * Copyright (c) 2014 All Rights Reserved.
  */
 
 /*
  * 修订记录：
- * lvchen@yiji.com 2015年7月13日 下午6:32:22 创建
+ * lucas(stick.goal@163.com) 2015年7月13日 下午6:32:22 创建
  */
 package info.maizz.lifebetterkit.designpattern.template.templatemethod;
 
@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 /**
  *
  *
- * @author lvchen@yiji.com
+ * @author lucas(stick.goal@163.com)
  *
  */
 public abstract class AbstractQuery<F extends Form, R extends Result> {

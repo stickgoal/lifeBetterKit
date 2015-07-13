@@ -1,11 +1,11 @@
 /*
- * www.yiji.com Inc.
+maizz.info 
  * Copyright (c) 2014 All Rights Reserved.
  */
 
 /*
  * 修订记录：
- * lvchen@yiji.com 2015年7月13日 下午4:45:30 创建
+ * lucas(stick.goal@163.com) 2015年7月13日 下午4:45:30 创建
  */
 package info.maizz.lifebetterkit.designpattern.template;
 
@@ -18,7 +18,7 @@ import org.apache.commons.lang3.StringUtils;
  * 只做演示用，实际场景建议使用jsr303处理 具体验证方式请参考 <a href=
  * "http://docs.jboss.org/hibernate/validator/4.2/reference/zh-CN/html/validator-usingvalidator.html"
  * >hibernate validator中文文档</a>
- * @author lvchen@yiji.com
+ * @author lucas(stick.goal@163.com)
  *
  */
 public class UserQueryForm extends Form {

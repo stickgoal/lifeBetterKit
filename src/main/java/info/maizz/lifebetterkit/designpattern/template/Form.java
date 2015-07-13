@@ -1,11 +1,11 @@
 /*
- * www.yiji.com Inc.
+maizz.info 
  * Copyright (c) 2014 All Rights Reserved.
  */
 
 /*
  * 修订记录：
- * lvchen@yiji.com 2015年7月13日 下午4:44:19 创建
+ * lucas(stick.goal@163.com) 2015年7月13日 下午4:44:19 创建
  */
 package info.maizz.lifebetterkit.designpattern.template;
 
@@ -18,7 +18,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  *
  * 表单对象，用于封装表单参数
  * 
- * @author lvchen@yiji.com
+ * @author lucas(stick.goal@163.com)
  *
  */
 public abstract class Form implements Serializable {

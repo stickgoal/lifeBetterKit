@@ -1,11 +1,11 @@
 /*
- * www.yiji.com Inc.
+maizz.info 
  * Copyright (c) 2014 All Rights Reserved.
  */
 
 /*
  * 修订记录：
- * lvchen@yiji.com 2015年3月16日 上午10:15:36 创建
+ * lucas(stick.goal@163.com) 2015年3月16日 上午10:15:36 创建
  */
 package info.maizz.lifebetterkit.json;
 
@@ -30,7 +30,7 @@ import com.google.gson.GsonBuilder;
 /**
  *
  *
- * @author lvchen@yiji.com
+ * @author lucas(stick.goal@163.com)
  *
  */
 public class TestGson extends TestCaseBase {

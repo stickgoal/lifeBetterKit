@@ -1,11 +1,11 @@
 /*
- * www.yiji.com Inc.
+maizz.info 
  * Copyright (c) 2014 All Rights Reserved.
  */
 
 /*
  * 修订记录：
- * lvchen@yiji.com 2015年3月16日 下午2:02:50 创建
+ * lucas(stick.goal@163.com) 2015年3月16日 下午2:02:50 创建
  */
 package info.maizz.lifebetterkit.json;
 
@@ -20,7 +20,7 @@ import com.google.gson.JsonParseException;
 /**
  *
  *
- * @author lvchen@yiji.com
+ * @author lucas(stick.goal@163.com)
  *
  */
 public class DateTypeAdapter implements JsonDeserializer<Date> {

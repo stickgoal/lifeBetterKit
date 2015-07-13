@@ -1,11 +1,11 @@
 /*
- * www.yiji.com Inc.
+maizz.info 
  * Copyright (c) 2014 All Rights Reserved.
  */
 
 /*
  * 修订记录：
- * lvchen@yiji.com 2015年7月13日 下午4:35:20 创建
+ * lucas(stick.goal@163.com) 2015年7月13日 下午4:35:20 创建
  */
 package info.maizz.lifebetterkit.designpattern.template;
 
@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 /**
  * yes,传说中的查询模板
  *
- * @author lvchen@yiji.com
+ * @author lucas(stick.goal@163.com)
  *
  */
 public class QueryTemplate {

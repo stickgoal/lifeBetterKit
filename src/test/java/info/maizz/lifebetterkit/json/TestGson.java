@@ -72,7 +72,7 @@ public class TestGson extends TestCaseBase {
 	
 	/** 反序列化 */
 	
-	private static String jsonDog = "{\"infos\":[{\"age\":\"1\",\"price\":\"103.02\",\"birthday\":\"20150356-104856\"}],\"brithday\":\"20150356-104856\"}";
+	private static String jsonDog = "{\"infos\":[{\"age\":\"1\",\"price\":\"103.02\",\"birthday\":\"20150356-104856\"}],\"brithday\":null}";
 	
 	public void testDeserialize() throws ParseException {
 		
@@ -91,6 +91,33 @@ public class TestGson extends TestCaseBase {
 			new String[] { "yyyyMMdd-HH:mm:ss" });
 		assertEquals("日期不相等", parseDate, info.getBirthday());
 		assertEquals("金额不相等", new Money(103.02), info.getPrice());
+		
+		assertNull(trueDog.getBrithday());
+	}
+	
+	private static String jsonDogEmptyArray = "{\"infos\":[],\"brithday\":null}";
+	
+	public void testDeserializeEmptyArray() throws ParseException {
+		
+		GsonBuilder gson = new GsonBuilder();
+		Dog trueDog = gson.create().fromJson(jsonDogEmptyArray, Dog.class);
+		print(trueDog);
+		
+		assertNotNull(trueDog);
+		List<Info> infos = trueDog.getInfos();
+		assertNotNull(infos);
+		assertEquals(0, infos.size());
+		assertNull(trueDog.getBrithday());
+	}
+	
+	private static String jsonDogEmptyString = "{\"infos\":\"\",\"brithday\":null}";
+	
+	public void testDeserializeEmptyString() {
+		GsonBuilder gson = new GsonBuilder();
+		gson.serializeNulls();
+		
+		Dog trueDog = gson.create().fromJson(jsonDogEmptyString, Dog.class);
+		print(trueDog);
 	}
 	
 	/** 辅助方法 */

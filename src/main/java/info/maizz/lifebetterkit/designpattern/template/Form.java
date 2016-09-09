@@ -24,6 +24,8 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 public abstract class Form implements Serializable {
 	
 	private static final long serialVersionUID = 5671088527198269176L;
+
+
 	
 	/**
 	 * 参数校验方法

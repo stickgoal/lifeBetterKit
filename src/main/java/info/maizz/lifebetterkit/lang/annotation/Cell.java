@@ -15,7 +15,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- *
+ * 用于解析excel文档的绑定
  *
  * @author lucas(stick.goal@163.com)
  *
